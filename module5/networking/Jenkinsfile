@@ -21,7 +21,7 @@ pipeline {
             steps {
                 dir('module5/networking/'){
                     sh 'terraform --version'
-                    sh "terraform init -input=false -plugin-dir=/var/jenkins_home/terraform_plugins \"
+                    sh "terraform init -input=false -plugin-dir=/var/jenkins_home/terraform_plugins"
                     sh "echo \$PWD"
                     sh "whoami"
                 }
