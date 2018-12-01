@@ -3,8 +3,8 @@
 ##################################################################################
 
 provider "aws" {
-  access_key = "AKIAJTGMDQCFBEB7LDDA"
-  secret_key = "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"
+  access_key = "${var.aws_access_key}"
+  secret_key = "${var.aws_secret_key}"
   region     = "us-west-2"
 }
 
